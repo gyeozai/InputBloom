@@ -1,21 +1,43 @@
 # InputBloom
 
-**InputBloom** is a lightweight AutoHotkey v2 desktop heatmap for monitoring daily keyboard activity and mouse clicks.
+**InputBloom** is a lightweight Python keyboard and mouse heatmap for Windows.
+
+<h2>System Snapshot</h2>
+
+<div align="center">
+  <img
+    src="assets/snapshot.png"
+    alt="InputBloom Dashboard"
+    width="850"
+  />
+  <p>
+    <sub>
+      <em>Figure 1. InputBloom — Keyboard and Mouse Activity Dashboard</em>
+    </sub>
+  </p>
+</div>
 
 ## Requirements
 
 - Windows 11
-- AutoHotkey v2
+- Python 3.10 or newer
 
 ## Usage
 
-1. Install [AutoHotkey v2](https://www.autohotkey.com/v2/)
-2. Double-click `keyboard_mouse_heatmap.ahk`.
-3. Click `Start` to begin tracking.
+1. Install [Python 3](https://www.python.org/downloads/windows/) and add it to PATH.
+2. Download this project, then open **Windows PowerShell** and run:
+
+   ```powershell
+   cd path\to\InputBloom
+   python3 -B app.py
+   ```
+
+3. The dashboard opens in your browser and starts tracking automatically.
+4. Press **Enter** or **Ctrl+C** in the terminal to save and stop.
 
 ## Features
 
-- Tracks daily keyboard presses and mouse clicks
+- Tracks daily keyboard presses and left/right mouse clicks
 - Displays a live keyboard and mouse heatmap
 - Shows a recent 30-day activity timeline
-- Saves daily activity counts locally
+- Saves daily counts locally in `keyboard_mouse_daily_log.ini`

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>InputBloom</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="assets/inputbloom.css">
+  <script src="assets/inputbloom.js" defer></script>
+</head>
+<body>
+  <main class="workspace">
+      <section id="view_inputbloom" class="view active" aria-label="Input activity dashboard">
+        <header class="view-head">
+          <div>
+            <div class="eyebrow">INPUT ACTIVITY</div>
+            <h1>InputBloom</h1>
+            <p class="subline">Explore daily keyboard and mouse activity in your local dashboard.</p>
+          </div>
+          <div class="head-actions">
+            <span id="inputbloom_badge" class="header-status waiting" role="status" aria-live="polite">connecting</span>
+          </div>
+        </header>
+        <div id="inputbloom_notice" class="notice hidden" role="status"></div>
+        <section class="bloom-dashboard">
+          <div id="bloom_canvas_viewport" class="bloom-canvas-viewport">
+            <div id="bloom_canvas_wrap" class="bloom-canvas-wrap">
+              <div id="bloom_canvas" class="bloom-canvas">
+                <div class="bloom-top">
+                  <article class="bloom-card bloom-mouse-card">
+                    <div class="bloom-section-title">MOUSE</div>
+                    <div class="bloom-mouse-scene">
+                      <div class="bloom-mouse-body"></div>
+                      <div id="mouse_left" class="bloom-mouse-part bloom-mouse-left"><span class="mouse-part-label">Left</span><b>0</b></div>
+                      <div id="mouse_right" class="bloom-mouse-part bloom-mouse-right"><span class="mouse-part-label">Right</span><b>0</b></div>
+                      <div class="bloom-mouse-wheel"></div>
+                      <div class="bloom-mouse-divider"></div>
+                      <div class="bloom-mouse-palm">left and right clicks only</div>
+                    </div>
+                  </article>
+                  <article class="bloom-card bloom-overview-card">
+                    <div class="bloom-overview-head">
+                      <div class="bloom-overview-title">ACTIVITY TIMELINE</div>
+                      <div class="bloom-day-actions">
+                        <button id="bloom_prev" type="button" disabled class="bloom-overview-button">Prev day</button>
+                        <button id="bloom_today" type="button" disabled class="bloom-overview-button primary">Today</button>
+                        <button id="bloom_next" type="button" disabled class="bloom-overview-button">Next day</button>
+                      </div>
+                    </div>
+                    <div class="bloom-trend-meta">
+                      <div id="bloom_trend_focus" class="bloom-trend-focus">--</div>
+                      <div id="bloom_trend_range" class="bloom-trend-range">Past 30 days</div>
+                    </div>
+                    <div class="bloom-trend-panel">
+                      <div class="bloom-trend-summary">
+                        <div id="bloom_trend_total" class="bloom-trend-total" aria-label="Total input events">0</div>
+                        <div id="bloom_trend_split" class="bloom-trend-split">Keyboard 0 | Mouse 0</div>
+                      </div>
+                      <div id="bloom_trend_chart" class="bloom-trend-chart"></div>
+                      <div class="bloom-trend-foot"><div id="bloom_trend_start">--</div><div id="bloom_trend_end">--</div></div>
+                    </div>
+                  </article>
+                </div>
+                <div id="bloom_board" class="bloom-board">
+                  <div class="bloom-cluster-label primary" style="left:26px">KEYBOARD</div>
+                  <div class="bloom-cluster-label" style="left:1222px">NAVIGATION</div>
+                  <div class="bloom-cluster-label" style="left:1480px">NUMPAD</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    <footer class="page-foot">Saved locally · Keyboard presses and left / right mouse clicks</footer>
+  </main>
+</body>
+</html>

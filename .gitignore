@@ -1,0 +1,5 @@
+keyboard_mouse_daily_log.ini
+keyboard_mouse_daily_log.ini.tmp
+.runtime/
+__pycache__/
+*.py[cod]
