@@ -2,8 +2,6 @@
 
 **InputBloom** is a lightweight Python keyboard and mouse heatmap for Windows.
 
-<h2>System Snapshot</h2>
-
 <div align="center">
   <img
     src="assets/snapshot.png"
@@ -12,7 +10,7 @@
   />
   <p>
     <sub>
-      <em>Figure 1. InputBloom — Keyboard and Mouse Activity Dashboard</em>
+      <em>Figure 1. System Snapshot</em>
     </sub>
   </p>
 </div>
