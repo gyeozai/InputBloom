@@ -6,7 +6,7 @@
   <img
     src="assets/snapshot.png"
     alt="InputBloom Dashboard"
-    width="500"
+    width="600"
   />
   <p>
     <sub>
